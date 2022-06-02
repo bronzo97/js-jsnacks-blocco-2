@@ -1,7 +1,19 @@
-const askNumber = prompt('Inserisci un numero');
+const number = document.querySelector('.number-container');
 
-if (parseInt(askNumber) % 2 === 0) {
-    console.log(parseInt(askNumber));
+const askNumber = +prompt('Inserisci un numero');
+
+
+
+const newDiv = document.createElement("div");
+const newClass = newDiv.classList.add('pippo');
+number.appendChild(newDiv);
+
+
+if (askNumber % 2 === 0) {
+    console.log(askNumber);
+    newDiv.textContent = askNumber;
 } else {
-    console.log(parseInt(askNumber) + 1);
+    console.log(askNumber + 1);
+    newDiv.textContent = askNumber + 1;
+
 }
