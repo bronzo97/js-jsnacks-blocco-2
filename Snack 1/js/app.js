@@ -15,5 +15,4 @@ if (askNumber % 2 === 0) {
 } else {
     console.log(askNumber + 1);
     newDiv.textContent = askNumber + 1;
-
 }
